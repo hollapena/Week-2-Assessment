@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+const gitDefinition = 'Git is a version control program on your computer that allows you to track your changes and save your work as well as every version that was saved to git previously in a repository. This way you can work on your project without as much fear of losing something or breaking something'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+const gitHubDefinition = 'Github is a website where you can store your repositories remotely. It serves dual purposes. First it allows multiple collaborators to access and work on the same coding project, and secondly, it can serve as a back up in case of file loss or damage on your machine.'
 
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
@@ -34,7 +36,10 @@
 */
 
 //CODE HERE
-
+const init ={
+    description: "tells your computer to initialize a git repo in the folder you're currently in.",
+    code:'git init',
+};
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,7 +47,10 @@
 */
 
 //CODE HERE
-
+const clone = {
+    description:'this command copies a repo from Github and puts it on your computer',
+    code:'git clone REPO_URL',
+};
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +58,10 @@
 */
 
 //CODE HERE
-
+const status = {
+    description:'tells you the current status of your git repo and if you have any changes that have not been added or pushed yet',
+    code: 'git status',
+};
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +69,10 @@
 */
 
 //CODE HERE
-
+const add = {
+    description:'adds files to be tracked',
+    code:'git add  -or-  git add .  to track all of the files contained in the folder',
+};
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,7 +80,10 @@
 */
 
 //CODE HERE
-
+const commit = {
+    description:'creates a snapshot of the files that you are tracking',
+    code:'git commit -m "A message" ',
+};
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +92,7 @@
 */
 
 //CODE HERE
+const push = {
+    description:'pushes your local commits to github',
+    code:'git push REPO_NAME',
+};

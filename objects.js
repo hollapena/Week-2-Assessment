@@ -15,10 +15,18 @@
 */
 
 //CODE HERE
-
-
-
-
+class Person{
+  constructor(firstName, state, age){
+    this.firstName = firstName;
+    this.state = state;
+    this.age = age;
+  }
+  greeter(){
+    return `Hello! My name is ${this.firstName} and I live in ${this.state}!`;
+  }
+}
+const me = new Person('Callie', 'Texas', 36);
+console.log(me.greeter());
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -45,3 +53,17 @@
 */
 
 //CODE HERE
+function carFactory(make, model, year){
+  const car = {
+    make:make,
+    model:model,
+    year:year,
+  }
+  if(year > 2018){
+    car.isNew=true;
+  } else {
+    car.isNew=false;
+  }return car;
+}
+console.log(carFactory('Toyota', 'Prius', 2014));
+console.log(carFactory('Mazda', 'Miata', 2020));
